@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+#canvasPlaceholder {
+  width: 1200px;
+  height: 400px;
+  /* background-color: black;
+  border-color: black; */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  margin: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+#highScoresContainer {
+  max-height: 150px; 
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: royalblu
+}
+
+#highScoresContainer:empty::before {
+  content: "No high scores yet.";
+  display: block;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#bottomContainer
+ {
+  width: 70rem;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+#nameContainer p{
+  font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: royalblue;
+}
